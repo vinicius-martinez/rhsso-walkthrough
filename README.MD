@@ -99,7 +99,7 @@ Docker assets are available in *docker* directory. In order to modify those imag
 
 ### 7. Change Themes <a name="demo-step-7"/>
 
-* On **JS Console App (http://localhost:80)** and click on **Logout;**
+* Go to **JS Console App (http://localhost:80)** and click on **Logout;**
 * On **Red Hat Single Sign ON (http://localhost:8080)**, click **Realm Settings** and select **Themes** tab;
 * Select a different theme from **Login Theme** dropdown list;
 * Click on **Save;**
@@ -117,8 +117,8 @@ Docker assets are available in *docker* directory. In order to modify those imag
 
 ### 9. Social Login <a name="demo-step-9"/>
 
-* On **JS Console App (http://localhost:80)** and click on **Logout;**
-* Click on **Identity Providers** right bellow the **Roles** at the left menu;
+* Go to **JS Console App (http://localhost:80)** and click on **Logout;**
+* On **Red Hat Single Sign ON (http://localhost:8080)**, click on **Identity Providers** right bellow the **Roles** at the left menu;
 * Select *Github*;
 * Open a new tab and access your *Github* account.
   * * Select **Settings** -> **Developer Settings** -> **OAuth App** and finally click on: **New OAuth App**
@@ -131,8 +131,8 @@ Docker assets are available in *docker* directory. In order to modify those imag
 
 ### 10. Two Factor with OTP <a name="demo-step-10"/>
 
-* On **JS Console App (http://localhost:80)** and click on **Logout;**
-* Click on **Authentication** right bellow the **User Federation** at the left menu;
+* On **JS Console App (http://localhost:80)** click on **Logout;**
+* On **Red Hat Single Sign ON (http://localhost:8080)** click on **Authentication** right bellow the **User Federation** at the left menu;
 * Change the default *OTP FORM* from **OPTIONAL** to **REQUIRED**;
 * Go back to **JS Console App (http://localhost:80)** and click on **Login;**
 * * considering installing *FreeOTP* or *Google Authenticator* and configure the authentication by scanning the provided *QR Code*;
