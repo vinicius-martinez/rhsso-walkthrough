@@ -88,6 +88,14 @@ Docker assets are available on *docker* directory. In order to modify those imag
   * considering exploring all buttons (Get Profile, Get User Info, Show Token) to familiarize yourself with *OpenID/OAuth* standards;
 
 ### 6. Enable SignUp <a name="deploy-step-6"/>
+
+* Go back to **JS Console App (http://localhost:80)** and click on **Logout**
+* Switch back to **Red Hat Single Sign ON (http://localhost:8080)** and click on **Realm Settings** right bellow the **Realm Name (Demo)** and select *Login;*
+* Enable *User Registration*
+* Click on **Save**
+* On **JS Console App (http://localhost:80)** click on **Login** button;
+* Click on **Register** and create a new user informing all required fields;
+* * if you experience session issues with other users, considering open a new browser instance or an incognito tab;
 ### 7. Change Themes <a name="deploy-step-7"/>
 ### 8. User Required Actions <a name="deploy-step-8"/>
 ### 9. Social Login <a name="deploy-step-9"/>
