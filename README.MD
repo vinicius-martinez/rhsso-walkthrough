@@ -79,6 +79,18 @@ Docker assets are available on *docker* directory. In order to modify those imag
 * In the *Client Roles* select **js-console** and click on **Add Selected;**
 
 ### 5. Create RHSSO User <a name="deploy-step-5"/>
+
+* Click on **Users** right bellow the **Groups** at the left menu;
+* Click on *Add User* button;
+* Inform a *Username* and click on **Save** button;
+* Got to *Credentials* tab and inform a new password;
+* Change *Temporary* to **OFF**;
+* Finally click on **Reset Password**;
+* Switch back to **JS Console App (http://localhost:80)** and click on **Login**
+* The **Red Hat Single Sign ON** login page will be displayed. Inform the credentials from the user you've created on previous step;
+* If everything is properly configured, after a successfully login you will be redirected to the **JS Console App**. Please notice the **Init Success (Authenticated)** right below the *Result* label;
+** considering exploring all buttons (Get Profile, Get User Info, Show Token) to familiarize yourself with *OpenID/OAuth* standards;
+
 ### 6. Enable SignUp <a name="deploy-step-6"/>
 ### 7. Change Themes <a name="deploy-step-7"/>
 ### 8. User Required Actions <a name="deploy-step-8"/>
