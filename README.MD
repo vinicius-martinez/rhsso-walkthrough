@@ -132,6 +132,11 @@ Docker assets are available on *docker* directory. In order to modify those imag
 ### 10. Two Factor with OTP <a name="demo-step-10"/>
 
 * On **JS Console App (http://localhost:80)** and click on **Logout;**
+* Click on **Authentication** right bellow the **User Federation** at the left menu;
+* Change the default *OTP FORM* from **OPTIONAL** to **REQUIRED**;
+* Go back to **JS Console App (http://localhost:80)** and click on **Login;**
+* * considering installing *FreeOTP* or *Google Authenticator* and configure the authentication by scanning the provided *QR Code*;
+
 
 ### 11. End User Account Management <a name="demo-step-11"/>
 
