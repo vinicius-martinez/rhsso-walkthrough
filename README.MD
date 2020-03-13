@@ -55,7 +55,7 @@ Docker assets are available on *docker* directory. In order to modify those imag
 ### 3. Create RHSSO Client APP <a name="deploy-step-3"/>
 
 * Click on *Clients* right bellow the *Realm Settings* at the left menu;
-* Click on *Create** button on the right corner;
+* Click on *Create* button on the right corner;
 * On the *Client ID* textfield, use: *js-console;*
 * Inform the *Root URL*: http://localhost
 * Click on **Save** button;
