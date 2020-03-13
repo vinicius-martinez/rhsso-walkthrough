@@ -29,7 +29,7 @@ Docker assets are available on *docker* directory. In order to modify those imag
 10. [Two Factor with OTP](#demo-step-10)
 11. [End User Account Management](#demo-step-11)
 
-### 1. Starting RHSSO and JS Console App <a name="deploy-step-1"/>
+### 1. Starting RHSSO and JS Console App <a name="demo-step-1"/>
 
 * Execute *docker pull* to download both **Red Hat Single Sign ON** and **JS Console App:**
   ```
@@ -46,13 +46,13 @@ Docker assets are available on *docker* directory. In order to modify those imag
 * Open a browser of choice and try to access **Red Hat Single Sign ON** on the following address with *admin/admin* credentials: http://localhost:8080/auth
 * Open a new tab and try to access **JS Console App** on the following address: http://localhost:80
 
-### 2. Create RHSSO Realm <a name="deploy-step-2"/>
+### 2. Create RHSSO Realm <a name="demo-step-2"/>
 
 * Return to the **Red Hat Single Sign ON** browser tab and place the mouser on the left top corner, right above the *Master*. Click on the arrow button and select **Add Realm**;
 * In the *name* textfield use: *demo*;
 * Click on *Create*;
 
-### 3. Create RHSSO Client APP <a name="deploy-step-3"/>
+### 3. Create RHSSO Client APP <a name="demo-step-3"/>
 
 * Click on *Clients* right bellow the *Realm Settings* at the left menu;
 * Click on *Create* button on the right corner;
@@ -60,7 +60,7 @@ Docker assets are available on *docker* directory. In order to modify those imag
 * Inform the *Root URL*: http://localhost
 * Click on **Save** button;
 
-### 4. Create RHSSO Roles <a name="deploy-step-4"/>
+### 4. Create RHSSO Roles <a name="demo-step-4"/>
 
 * Click on **Roles** right bellow the **Client Templates** at the left menu;
 * Click on *Add Role* button;
@@ -74,7 +74,7 @@ Docker assets are available on *docker* directory. In order to modify those imag
 * Select any role available *Available Roles* list and click on **Add Selected;**
 * In the *Client Roles* select **js-console** and click on **Add Selected;**
 
-### 5. Create RHSSO User <a name="deploy-step-5"/>
+### 5. Create RHSSO User <a name="demo-step-5"/>
 
 * Click on **Users** right bellow the **Groups** at the left menu;
 * Click on *Add User* button;
@@ -87,7 +87,7 @@ Docker assets are available on *docker* directory. In order to modify those imag
 * If everything is properly configured, after a successfully login you will be redirected to the **JS Console App**. Please notice the **Init Success (Authenticated)** right below the *Result* label;
   * considering exploring all buttons (Get Profile, Get User Info, Show Token) to familiarize yourself with *OpenID/OAuth* standards;
 
-### 6. Enable SignUp <a name="deploy-step-6"/>
+### 6. Enable SignUp <a name="demo-step-6"/>
 
 * Go back to **JS Console App (http://localhost:80)** and click on **Logout**
 * Switch back to **Red Hat Single Sign ON (http://localhost:8080)** and click on **Realm Settings** right bellow the **Realm Name (Demo)** and select *Login;*
@@ -96,11 +96,12 @@ Docker assets are available on *docker* directory. In order to modify those imag
 * On **JS Console App (http://localhost:80)** click on **Login** button;
 * Click on **Register** and create a new user informing all required fields;
 * * if you experience session issues with other users, considering open a new browser instance or an incognito tab;
-### 7. Change Themes <a name="deploy-step-7"/>
-### 8. User Required Actions <a name="deploy-step-8"/>
-### 9. Social Login <a name="deploy-step-9"/>
-### 10. Two Factor with OTP <a name="deploy-step-10"/>
-### 11. End User Account Management <a name="deploy-step-11"/>
+
+### 7. Change Themes <a name="demo-step-7"/>
+### 8. User Required Actions <a name="demo-step-8"/>
+### 9. Social Login <a name="demo-step-9"/>
+### 10. Two Factor with OTP <a name="demo-step-10"/>
+### 11. End User Account Management <a name="demo-step-11"/>
 
 
 
