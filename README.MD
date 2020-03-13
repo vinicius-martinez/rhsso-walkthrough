@@ -17,7 +17,7 @@ Docker assets are available on *docker* directory. In order to modify those imag
 
 ## Demo Script
 
-1. [Starting RHSSO and slide-demo-app](#demo-step-1)
+1. [Starting RHSSO and JS Console App](#demo-step-1)
 2. [Create RHSSO Realm](#demo-step-2)
 3. [Create RHSSO Client APP](#demo-step-3)
 4. [Create RHSSO Roles](#demo-step-4)
@@ -29,27 +29,37 @@ Docker assets are available on *docker* directory. In order to modify those imag
 10. [Two Factor with OTP](#demo-step-10)
 11. [End User Account Management](#demo-step-11)
 
-### 1. Starting RHSSO and slide-demo-app <a name="deploy-step-1"/>
+### 1. Starting RHSSO and JS Console App <a name="deploy-step-1"/>
 
-* Execute *docker pull* to download both **Red Hat Single Sign ON** and **Red Hat Single Sign On JS Console App:**
+* Execute *docker pull* to download both **Red Hat Single Sign ON** and **JS Console App:**
 
-  * * Pulling **Red Hat Single Sign ON 7.3** and **Red Hat Single Sign On JS Console App:**
+  ```
+  docker pull viniciusmartinez/rhsso73:1.0
+  docker pull viniciusmartinez/sso-console-app:1.0
+  ```
 
-    ```
-    docker pull viniciusmartinez/rhsso73:1.0
-    docker pull viniciusmartinez/sso-console-app:1.0
-    ```
+* Bootstrap both both **Red Hat Single Sign ON** and **JS Console App:**
+
+  ```
+  docker run -it -p 8080:8080 viniciusmartinez/rhsso73:1.0
+  docker run -it -p 80:80 viniciusmartinez/sso-console-app:1.0
+  ```
+  * * if you modify **Red Hat Single Sign ON** default port, don't forget to update *keycloak.json;*
+
+* Open a browser of choice and try to access **Red Hat Single Sign ON*** on the following address with admin/admin credentials: http://localhost:8080/auth
+
+* Open a new tab and try to access **JS Console App** on the following address: http://localhost:80
 
 ### 2. Create RHSSO Realm <a name="deploy-step-2"/>
 ### 3. Create RHSSO Client APP <a name="deploy-step-3"/>
-### 4. Create RHSSO Role <a name="deploy-step-4"/>
-### 5. Create RHSSO Realm <a name="deploy-step-5"/>
-### 6. Create RHSSO Realm <a name="deploy-step-6"/>
-### 7. Create RHSSO Realm <a name="deploy-step-7"/>
-### 8. Create RHSSO Realm <a name="deploy-step-8"/>
-### 9. Create RHSSO Realm <a name="deploy-step-9"/>
-### 10. Create RHSSO Realm <a name="deploy-step-10"/>
-### 11. Create RHSSO Realm <a name="deploy-step-11"/>
+### 4. Create RHSSO Roles <a name="deploy-step-4"/>
+### 5. Create RHSSO User <a name="deploy-step-5"/>
+### 6. Enable SignUp <a name="deploy-step-6"/>
+### 7. Change Themes <a name="deploy-step-7"/>
+### 8. User Required Actions <a name="deploy-step-8"/>
+### 9. Social Login <a name="deploy-step-9"/>
+### 10. Two Factor with OTP <a name="deploy-step-10"/>
+### 11. End User Account Management <a name="deploy-step-11"/>
 
 
 
