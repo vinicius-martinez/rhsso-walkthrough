@@ -140,6 +140,7 @@ Docker assets are available on *docker* directory. In order to modify those imag
 
 ### 11. End User Account Management <a name="demo-step-11"/>
 
-
+* Open a new browser tab with the following url: [http://localhost:8080/auth/realms/demo/account](http://localhost:8080/auth/realms/demo/account)
+* Navigate through the options and update your profile if desired;
 
 ## Additional References <a name="additional-references">
