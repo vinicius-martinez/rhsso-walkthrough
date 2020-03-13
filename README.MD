@@ -52,9 +52,32 @@ Docker assets are available on *docker* directory. In order to modify those imag
 
 ### 2. Create RHSSO Realm <a name="deploy-step-2"/>
 
+* Return to the **Red Hat Single Sign ON** browser tab and place the mouser on the left top corner, right above the *Master*. Click on the arrow button and select **Add Realm**;
+* In the *name* textfield use: *demo*
+* Click on *Create*
 
 ### 3. Create RHSSO Client APP <a name="deploy-step-3"/>
+
+* Click on *Clients* right bellow the *Realm Settings* at the left menu;
+* Click on *Create** button on the right corner;
+* On the *Client ID* textfield, use: *js-console*
+* Inform the *Root URL*: http://localhost
+* Click on **Save** button;
+
 ### 4. Create RHSSO Roles <a name="deploy-step-4"/>
+
+* Click on **Roles** right bellow the **Client Templates** at the left menu;
+* Click on *Add Role* button;
+* Inform a *Role Name* (e.g: realm-role) and click on **Save** button afterward;
+* Click on **Clients** right bellow the **Realm Settings** at the left menu;
+* Select **js-console** and **Roles** afterward;
+* Click on **Add Role** button;
+* Inform a *Role Name* (e.g: client-role) and afterwards **Save** button;
+* Click on **Roles** again;
+* Select *Default Roles*
+* Select any role available *Available Roles* list and click on **Add Selected**
+* In the *Client Roles* select **js-console** and click on **Add Selected**
+
 ### 5. Create RHSSO User <a name="deploy-step-5"/>
 ### 6. Enable SignUp <a name="deploy-step-6"/>
 ### 7. Change Themes <a name="deploy-step-7"/>
