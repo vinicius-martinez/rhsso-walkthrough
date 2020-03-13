@@ -6,9 +6,9 @@ This demo showcase a step-by-step guide covering basic capabilities from [Red Ha
 
 ## Building from Source
 
-Source code artifacts are available on *source* directory. No need to build/compile anything, since we're using *JavaScript* and *HTML*.
+Source code artifacts are available in *source* directory. No need to build/compile anything since we're using *JavaScript* and *HTML*.
 
-Docker assets are available on *docker* directory. In order to modify those images, just change *Dockerfile-js-console* or *Dockerfile-rhsso-73* as needed and execute a *docker build -t* from *root* directory . Example:
+Docker assets are available in *docker* directory. In order to modify those images, just change *Dockerfile-js-console* or *Dockerfile-rhsso-73* files as needed and execute *docker build -t* from *root* directory . Example:
 
   ```
   docker build -t rhsso-js-console-app:1.0 -f docker/Dockerfile-js-console .
@@ -36,14 +36,14 @@ Docker assets are available on *docker* directory. In order to modify those imag
   docker pull viniciusmartinez/rhsso73:1.0
   docker pull viniciusmartinez/sso-console-app:1.0
   ```
-* Bootstrap both both **Red Hat Single Sign ON** and **JS Console App:**
+* Bootstrap both **Red Hat Single Sign ON** and **JS Console App:**
 
   ```
   docker run -it -p 8080:8080 viniciusmartinez/rhsso73:1.0
   docker run -it -p 80:80 viniciusmartinez/sso-console-app:1.0
   ```
   * if you modify **Red Hat Single Sign ON** default port don't forget to update *keycloak.json;*
-* Open a browser of choice and try to access **Red Hat Single Sign ON** on the following address with *admin/admin* credentials: http://localhost:8080/auth
+* Open a browser of your choice and try to access **Red Hat Single Sign ON** on the following address with *admin/admin* credentials: http://localhost:8080/auth
 * Open a new tab and try to access **JS Console App** on the following address: http://localhost:80
 
 ### 2. Create RHSSO Realm <a name="demo-step-2"/>
