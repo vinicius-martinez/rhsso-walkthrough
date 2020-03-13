@@ -116,15 +116,25 @@ Docker assets are available on *docker* directory. In order to modify those imag
 * Try to login with this user and now you'll have to execute the *Required Actions* previously configured;
 
 ### 9. Social Login <a name="demo-step-9"/>
+
+* On **JS Console App (http://localhost:80)** and click on **Logout;**
+* Click on **Identity Providers** right bellow the **Roles** at the left menu;
+* Select *Github*;
+* Open a new tab and access your *Github* account.
+  * * Select **Settings** -> **Developer Settings** -> **OAuth App** and finally click on: **New OAuth App**
+* Inform an *Application name* and a *Homepage URL* and finally copy the *Redirect URI* from **Red Hat Single Sign ON** and paste it on **CallBack URL**
+* Click on **Register Application**
+* Copy both **Client ID** and **Client Secret** from *Github* and paste them on *RHSSO*
+* Click on **Save**
+* Go back to **JS Console App (http://localhost:80)** and click on **Login;**
+* Notice that now you have the option to login with *Github*;
+
 ### 10. Two Factor with OTP <a name="demo-step-10"/>
+
+* On **JS Console App (http://localhost:80)** and click on **Logout;**
+
 ### 11. End User Account Management <a name="demo-step-11"/>
 
 
 
 ## Additional References <a name="additional-references">
-
-- [Red Hat Fuse on Openshift Official Documentation](https://access.redhat.com/documentation/en-us/red_hat_fuse/7.3/html-single/fuse_on_openshift_guide/index)
-- [Red Hat Data Grid on Openshift Official Documentation](https://access.redhat.com/documentation/en-us/red_hat_data_grid/7.3/html-single/red_hat_data_grid_for_openshift/index)
-- [JBoss JDG Quickstarts](https://github.com/jboss-developer/jboss-jdg-quickstarts/tree/jdg-7.3.x/openshift)
-- [Camel Infinispan Component Documentation](https://access.redhat.com/documentation/en-us/red_hat_fuse/7.3/html-single/apache_camel_component_reference/index#infinispan-component)
-- [Offload your database data into an in-memory data grid for fast processing made easy](https://developers.redhat.com/blog/2017/04/03/offload-your-database-data-into-an-in-memory-data-grid-for-fast-processing-made-easy/)
