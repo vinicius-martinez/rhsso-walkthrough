@@ -98,7 +98,23 @@ Docker assets are available on *docker* directory. In order to modify those imag
 * * if you experience session issues with other users, considering open a new browser instance or an incognito tab;
 
 ### 7. Change Themes <a name="demo-step-7"/>
+
+* On **JS Console App (http://localhost:80)** and click on **Logout;**
+* On **Red Hat Single Sign ON (http://localhost:8080)**, click **Realm Settings** and select **Themes** tab;
+* Select a different theme from **Login Theme** dropdown list;
+* Click on **Save;**
+* Go back to **JS Console App (http://localhost:80)** and click on **Login;**
+* Notice  a different look'n'feel from **Red Hat Single Sign ON** login page;
+
 ### 8. User Required Actions <a name="demo-step-8"/>
+
+* Click on **Users** right bellow the **Groups** at the left menu;
+* Click on *View all users* button and select one;
+* Select an user by clicking on *Edit*;
+* Select a few actions on **Required User Actions** menu;
+* Click on **Save**
+* Try to login with this user and now you'll have to execute the *Required Actions* previously configured;
+
 ### 9. Social Login <a name="demo-step-9"/>
 ### 10. Two Factor with OTP <a name="demo-step-10"/>
 ### 11. End User Account Management <a name="demo-step-11"/>
