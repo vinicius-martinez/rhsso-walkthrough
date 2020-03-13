@@ -44,7 +44,7 @@ Docker assets are available on *docker* directory. In order to modify those imag
   docker run -it -p 8080:8080 viniciusmartinez/rhsso73:1.0
   docker run -it -p 80:80 viniciusmartinez/sso-console-app:1.0
   ```
-  * if you modify **Red Hat Single Sign ON** default port, don't forget to update *keycloak.json;*
+  * if you modify **Red Hat Single Sign ON** default port don't forget to update *keycloak.json;*
 
 * Open a browser of choice and try to access **Red Hat Single Sign ON*** on the following address with *admin/admin* credentials: http://localhost:8080/auth
 
