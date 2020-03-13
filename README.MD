@@ -32,12 +32,10 @@ Docker assets are available on *docker* directory. In order to modify those imag
 ### 1. Starting RHSSO and JS Console App <a name="deploy-step-1"/>
 
 * Execute *docker pull* to download both **Red Hat Single Sign ON** and **JS Console App:**
-
   ```
   docker pull viniciusmartinez/rhsso73:1.0
   docker pull viniciusmartinez/sso-console-app:1.0
   ```
-
 * Bootstrap both both **Red Hat Single Sign ON** and **JS Console App:**
 
   ```
@@ -45,9 +43,7 @@ Docker assets are available on *docker* directory. In order to modify those imag
   docker run -it -p 80:80 viniciusmartinez/sso-console-app:1.0
   ```
   * if you modify **Red Hat Single Sign ON** default port don't forget to update *keycloak.json;*
-
-* Open a browser of choice and try to access **Red Hat Single Sign ON*** on the following address with *admin/admin* credentials: http://localhost:8080/auth
-
+* Open a browser of choice and try to access **Red Hat Single Sign ON** on the following address with *admin/admin* credentials: http://localhost:8080/auth
 * Open a new tab and try to access **JS Console App** on the following address: http://localhost:80
 
 ### 2. Create RHSSO Realm <a name="deploy-step-2"/>
