@@ -1,0 +1,4 @@
+FROM registry.redhat.io/rh-sso-7/sso74-openshift-rhel8:7.4-37
+
+ADD docker/keycloak-add-user.json /opt/eap/standalone/configuration/keycloak-add-user.json
+

@@ -12,7 +12,7 @@ Docker assets are available in *docker* directory. In order to modify those imag
 
   ```
   docker build -t rhsso-js-console-app:1.0 -f docker/Dockerfile-js-console .
-  docker build -t rhsso73:1.0 -f docker/Dockerfile-rhsso-73 .
+  docker build -t rhsso74:1.0 -f docker/Dockerfile-rhsso-74 .
   ```
 
 ## Demo Script
@@ -33,7 +33,7 @@ Docker assets are available in *docker* directory. In order to modify those imag
 
 * Execute *docker pull* to download both **Red Hat Single Sign ON** and **JS Console App:**
   ```
-  docker pull viniciusmartinez/rhsso73:1.0
+  docker pull viniciusmartinez/rhsso74:1.0
   docker pull viniciusmartinez/sso-console-app:1.0
   ```
 * Bootstrap both **Red Hat Single Sign ON** and **JS Console App:**
